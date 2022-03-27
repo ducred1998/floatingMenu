@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Floating Menu</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="menu_toggle"></div>
+      <div class="profile">
+        <div class="imgBox">
+          <img src="./Avatar.jpg" />
+        </div>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="https://ducred1998.github.io/ducCV/">
+            <span class="icon"
+              ><ion-icon name="person-outline"></ion-icon
+            ></span>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100009351843393">
+            <span class="icon"
+              ><ion-icon name="chatbubble-outline"></ion-icon
+            ></span>
+            <span class="text">Inbox</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="settings-outline"></ion-icon
+            ></span>
+            <span class="text">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+            <span class="text">Support</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="log-out-outline"></ion-icon
+            ></span>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const navigation = document.querySelector(".navigation");
+    const menu_toggle = document.querySelector(".menu_toggle");
+    menu_toggle.onclick = function () {
+      navigation.classList.toggle("active");
+    };
+  </script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>
